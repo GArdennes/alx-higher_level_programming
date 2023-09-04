@@ -1,0 +1,41 @@
+The ''0-add_integer'' module
+============================
+
+Using ''add_integer''
+---------------------
+
+Importing function from the module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Adding 1 and 2
+    >>> add_integer(1, 2)
+    3
+
+Adding 1.5 and 2.5
+    >>> add_integer(1.5, 2.5)
+    3
+
+Adding string and 2
+    >>> add_integer("1", 2) 
+    Traceback (most recent call last):
+	      ...
+    TypeError: a must be an integer
+
+Adding 1 and string
+    >>> add_integer(1, "2") 
+    Traceback (most recent call last):
+	      ...
+    TypeError: b must be an integer
+
+Adding None and 2
+    >>> add_integer(None, 2)
+    Traceback (most recent call last):
+	      ...
+    TypeError: a must be an integer
+
+Adding 1 and None
+    >>> add_integer(1, None)
+    Traceback (most recent call last):
+	      ...
+    TypeError: b must be an integer
+
