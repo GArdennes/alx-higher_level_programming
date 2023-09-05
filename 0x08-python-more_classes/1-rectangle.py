@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Create a rectangle class"""
+
+
 class Rectangle:
     """
     Definition of a class rectangle
