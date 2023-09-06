@@ -3,5 +3,4 @@
 
 
 def copy_list(lst):
-    new = lst[:]
-    return new
+    return lst[:]
