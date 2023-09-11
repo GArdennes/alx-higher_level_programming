@@ -10,14 +10,4 @@ def lookup(obj):
     Args:
         obj: object
     """
-    methods = []
-    attributes = []
-
-    for attr_name in dir(obj):
-        attr = getattr(obj, attr_name)
-
-        if callable(attr):
-            methods.append(attr_name)
-        else:
-            attributes.append(attr_name)
-    return methods, attributes
+    return dir(obj)
