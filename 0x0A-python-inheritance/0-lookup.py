@@ -4,7 +4,11 @@ Task 0
 """
 
 def lookup(obj):
-    """ Lookup function """
+    """ 
+    Lookup function
+    Args:
+        obj: object
+    """
     methods = []
     attributes = []
 
