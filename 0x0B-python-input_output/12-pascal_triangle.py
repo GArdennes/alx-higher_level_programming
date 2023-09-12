@@ -5,6 +5,9 @@ Task 12
 
 
 def pascal_triangle(n):
+    """
+    Return the pascal triangle
+    """
     if n <= 0:
         return []
     triangle = []
