@@ -111,3 +111,30 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except FileNotFoundError:
             return []
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """Draw rectangles and squares using the turtle module"""
+        turt = turtle.Turtle()
+        turt.screen.bgcolor("#b7312c")
+        turt.pensize(3)
+        turt.shape("turle")
+
+        def draw_shape(shape, color):
+            turt.color(color)
+            for item in shape:
+                turt.showturtle()
+                turt.up()
+                turt.goto(item.x, item.y)
+                turt.down()
+                for i in range(2):
+                    turt.forward(item.width)
+                    turt.left(90)
+                    turt.forward(item.height)
+                    turt.left(90)
+                turt.hideturtle()
+    
+    draw_shape(list_rectangles, "#ffffff")
+    draw_shape(list_squares, "#b5e3d8")
+
+    turtle.exitonclick()
