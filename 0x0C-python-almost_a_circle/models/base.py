@@ -121,6 +121,7 @@ class Base:
         turt.shape("turle")
 
         def draw_shape(shape, color):
+            """sub-function of draw"""
             turt.color(color)
             for item in shape:
                 turt.showturtle()
