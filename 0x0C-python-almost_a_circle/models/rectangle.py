@@ -4,7 +4,7 @@ Rectangle Object
 """
 
 
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
