@@ -120,8 +120,14 @@ class Base:
         turt.pensize(3)
         turt.shape("turle")
 
+
         def draw_shape(shape, color):
-            """sub-function of draw"""
+            """
+            sub-function of draw
+            Args:
+                shape (list): shape object
+                color: turtle color
+            """
             turt.color(color)
             for item in shape:
                 turt.showturtle()
@@ -135,7 +141,7 @@ class Base:
                     turt.left(90)
                 turt.hideturtle()
     
-    draw_shape(list_rectangles, "#ffffff")
-    draw_shape(list_squares, "#b5e3d8")
+        draw_shape(list_rectangles, "#ffffff")
+        draw_shape(list_squares, "#b5e3d8")
 
-    turtle.exitonclick()
+        turtle.exitonclick()
