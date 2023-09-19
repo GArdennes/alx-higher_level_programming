@@ -120,7 +120,6 @@ class Base:
         turt.pensize(3)
         turt.shape("turle")
 
-
         def draw_shape(shape, color):
             """
             sub-function of draw
@@ -140,8 +139,6 @@ class Base:
                     turt.forward(item.height)
                     turt.left(90)
                 turt.hideturtle()
-    
         draw_shape(list_rectangles, "#ffffff")
         draw_shape(list_squares, "#b5e3d8")
-
         turtle.exitonclick()
