@@ -2,30 +2,29 @@
 """
 Rectangle Object
 """
-
-
 from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
     """Define Square class"""
-
     def __init__(self, size, x=0, y=0, id=None):
         """Class constructor"""
         super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
+        """size getter"""
         return self.width
 
     @size.setter
     def size(self, value):
+        """size setter"""
         self.width = value
         self.height = value
 
     def update(self, *args, **kwargs):
         """Update method"""
-        if args:
+        if args and len(args) != 0:
             if len(args) >= 1:
                 self.id = args[0]
             if len(args) >= 2:
