@@ -1,4 +1,4 @@
-#!/usr/bin/code
+#!/usr/bin/node
 // script that prints the addition of 2 integers
 
 const myFirst = parseInt(process.argv[2]);
