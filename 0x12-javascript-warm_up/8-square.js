@@ -8,7 +8,7 @@ if (isNaN(myVar)) {
   for (let i = 0; i < myVar; i++) {
     let row = '';
     for (let j = 0; j < myVar; j++) {
-      row += 'x';
+      row += 'X';
     }
     console.log(row);
   }
