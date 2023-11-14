@@ -9,10 +9,9 @@ class Square extends SquareBase {
       let row = '';
       for (let j = 0; j < this.size; j++) {
         if (c === undefined) {
-          row += 'X';
-        } else {
-          row += c;
+          c = 'X';
         }
+        row += c;
       }
       console.log(row);
     }
