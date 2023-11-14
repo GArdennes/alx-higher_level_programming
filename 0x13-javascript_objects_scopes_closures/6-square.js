@@ -5,15 +5,11 @@ const SquareBase = require('./5-square');
 
 class Square extends SquareBase {
   charPrint (c) {
-    for (let i = 0; i < this.size; i++) {
-      let row = '';
-      for (let j = 0; j < this.size; j++) {
-        if (c === undefined) {
-          c = 'X';
-        }
-        row += c;
-      }
-      console.log(row);
+    if (c === undefined) {
+      c = 'X';
+    }
+    for (let i = 0; i < this.height; i++) {
+      console.log(c.repeat(this.width));
     }
   }
 }
