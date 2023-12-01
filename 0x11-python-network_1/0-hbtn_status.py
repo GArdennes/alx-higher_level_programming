@@ -13,7 +13,7 @@ if __name__ == "__main__":
             request
             ) as response:
         html_content = response.read()
-        print("Body response.")
+        print("Body response:")
         print("\t- type: {}".format(
             type(html_content)))
         print("\t- content: {}".format(
