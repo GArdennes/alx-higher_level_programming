@@ -4,7 +4,7 @@ import requests
 
 
 if __name__ == "__main__":
-    data = {"email": argv[2]}
+    json = {"email": argv[2]}
     response = requests.post(
-            argv[1], json=data)
+            argv[1], data=json)
     print(response.text)
