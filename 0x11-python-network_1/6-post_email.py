@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Script to post and email
+"""
 from sys import argv
 import requests
 
