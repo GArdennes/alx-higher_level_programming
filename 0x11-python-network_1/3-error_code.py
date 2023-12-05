@@ -11,7 +11,7 @@ if __name__ == "__main__":
     try:
         request = urllib.request.Request(argv[1])
         with urllib.request.urlopen(
-                argv[1]) as response:
+               request) as response:
             response_data = response.read(
                     ).decode("ascii")
             print(response_data)
