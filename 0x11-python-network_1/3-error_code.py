@@ -8,12 +8,12 @@ from sys import argv
 
 
 if __name__ == "__main__":
+    request = urllib.request.Request(argv[1])
     try:
-        request = urllib.request.Request(argv[1])
         with urllib.request.urlopen(
                request) as response:
             response_data = response.read(
-                    ).decode("ascii")
+                    ).decode("utf-8")
             print(response_data)
     except urllib.error.HTTPError as e:
         print("Error: {}".format(e.code))
