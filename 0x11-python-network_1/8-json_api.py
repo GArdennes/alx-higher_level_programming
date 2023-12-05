@@ -11,7 +11,7 @@ if __name__ == "__main__":
     pay_load = {"q": letter}
     url = requests.post(
             "http://0.0.0.0:5000/search_user",
-            data=payload)
+            data=pay_load)
     try:
         response = url.json()
         if response == {}:
