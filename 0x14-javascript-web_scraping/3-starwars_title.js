@@ -1,10 +1,14 @@
 #!/usr/bin/node
 /* Displays the status code of a GET request */
 
-const request = require('request');
-const url = process.argv[2];
+const request = require('request-promise');
+const id = process.argv[2];
+const apiUrl = 'https://swapi-api.hbtn.io/api/films/';
 
-request(url, (err, response) => {
-  if (err) console.log(err);
-  else console.log('code:', response.statusCode);
-});
+request(apiUrl + id + '/')
+  .then(response => {
+    console.log(JSON.parse(response).title);
+  })
+  .catch(err => {
+    console.error(err);
+  });
