@@ -1,14 +1,12 @@
 #!/usr/bin/node
-/* Displays the status code of a GET request */
+/* prints the title of a Star Wars movie where the
+episode number matches a given integer */
 
-const request = require('request-promise');
+const request = require('request');
 const id = process.argv[2];
 const apiUrl = 'https://swapi-api.hbtn.io/api/films/';
 
-request(apiUrl + id + '/')
-  .then(response => {
-    console.log(JSON.parse(response).title);
-  })
-  .catch(err => {
-    console.error(err);
-  });
+request(apiUrl + id + '/', (err, response, body) => {
+  if (err) console.log(err);
+  else console.log(JSON.parse(body).title);
+});
