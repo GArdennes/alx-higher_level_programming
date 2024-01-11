@@ -90,3 +90,34 @@ You can’t use document.querySelector to select the HTML tag
 You must use the JQuery API
 Your script must work when it is imported from the <head> tag
 
+10. No jQuery - document loaded
+Write a JavaScript 100-script.js script that updates the text color of the <header> element to red (#FF0000).
+Requirements
+You must use document.querySelector to select the HTML tag
+You can’t use the jQuery API
+Note: Your script must be imported from the <head> tag, not at the end of the HTML
+
+11. List, add, remove
+Write a JavaScript 101-script.js script that adds, removes and clears LI elements from a list when the user clicks. 
+Requirements
+The new element must be: <li>Item</li>
+The new element must be added to UL.my_list
+When the user clicks on DIV#add_item, a new element is added to the list
+When the user clicks on DIV#remove_item, the last element is removed from the list
+When the user clicks on DIV#clear_list, all elements of the list are removed
+You can’t use document.querySelector to select the HTML tag.
+You must use the JQuery API
+Your script must work when it is imported from the HEAD tag
+
+12. Say hello to everybody!
+Write a JavaScript 102-script.js script that fetches and prints how to say ‘Hello’ depending on the language. You should use this API service: https://www.fourtonfish.com/hellosalut/hello/. The language code will be the value entered in the tag INPUT#language_code . The translation must be fetched when the user clicks on INPUT#btn_translate. The translation of ‘Hello’ must be displayed in the HTML tag DIV#hello.
+Requirements
+You must use the JQuery API
+Your script must work when imported from the <head> tag.
+
+13. And press ENTER
+Write a JavaScript 103-script.js script that fetches and prints how to say ‘Hello’ depending on the language. You should use this API service:  . The language code will be the value entered in the tag  (). The translation must be fetched when the user clicks on  OR presses ENTER when the focus is on  . The translation of ‘Hello’  must be displayed in the HTML tag ‘DIV#hello’.
+Requirements
+You must use the JQuery API
+Your script must work when imported from the <head> tag.
+
